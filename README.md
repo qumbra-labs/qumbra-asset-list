@@ -12,7 +12,7 @@ On an Annulet chain an asset is a registry slot: a number from 1 to 65535. The r
 - **The list is signed.** The signature is ML-DSA-65 over `qumbra:asset-list:v1\0 ‖ the file's exact bytes`, stored beside the list as `<list>.json.sig`. The key's public half is `keys/list-key.pub`. A wallet build embeds the list and its signature from a pinned commit of this repository, and it verifies them against a compiled-in key.
 - **The list pins the issuer key (D2).** A wallet shows the listed name only while the chain's registry leaf carries the listed `issuer_key`. If the issuer rotates its key, the wallet shows "issuer changed" and the raw balance until a new list is signed.
 - **Unlisted assets are still shown**, as "asset #N" in raw base units. Their decimals are never guessed.
-- **`testnet: true` entries** are labelled as test money on every surface.
+- **A `testnet: true` list** marks every row it covers as test money, on every surface — listed assets, unlisted ones and the fee unit alike. A list is for one network, and a network either is a testnet or is not.
 
 ## Format (v1)
 
@@ -21,20 +21,25 @@ On an Annulet chain an asset is a registry slot: a number from 1 to 65535. The r
   "v": 1,
   "network": "<label>",
   "genesis": "<64 lowercase hex: keccak256 of the genesis file>",
+  "testnet": true,
   "assets": [
     { "id": 1, "issuer_key": "<64 lowercase hex: the leaf's 4 lanes, little-endian>",
       "name": "<1–64 printable chars>", "ticker": "<1–12 of A-Z a-z 0-9 . ->",
-      "decimals": 6, "testnet": true }
+      "decimals": 6 }
   ]
 }
 ```
 
-The parser is strict:
+The list must be at most 1 MiB. The parser is strict:
 
+- `v` is checked first, so a later version is refused as a version;
 - unknown keys are refused;
 - ids must ascend and must not repeat;
 - id 0 (the fee unit) is never listed;
-- `decimals` must be 18 or less.
+- `decimals` must be 18 or less;
+- a ticker may not repeat within a list (case-insensitively).
+
+What the parser does **not** judge is resemblance: a name or ticker that looks like another asset's (homoglyphs, or a "USDT" that is not Tether's). That is this repository's review job, before anything is signed.
 
 The parser that enforces this is the wallet's own (`qumbra_wallet::asset_view::verify_asset_list`). The tool below uses the same parser, so a list it signs is a list every wallet accepts.
 

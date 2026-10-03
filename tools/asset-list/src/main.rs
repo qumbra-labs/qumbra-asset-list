@@ -103,15 +103,11 @@ fn verify(args: &[String]) -> Result<(), String> {
     let parsed = verify_asset_list(&bytes, &sig, &vk).map_err(|e| e.to_string())?;
     println!("OK — {} for genesis {}", parsed.network, hex(&parsed.genesis));
     println!("digest {} signer {}", hex(&parsed.digest), hex(&vk.fingerprint()));
+    if parsed.testnet {
+        println!("TEST NETWORK: every row under this list is test money");
+    }
     for a in parsed.assets.values() {
-        println!(
-            "  #{:<5} {:<10} {} decimals{}  {}",
-            a.id,
-            a.ticker,
-            a.decimals,
-            if a.testnet { "  TEST" } else { "" },
-            a.name
-        );
+        println!("  #{:<5} {:<10} {} decimals  {}", a.id, a.ticker, a.decimals, a.name);
     }
     Ok(())
 }

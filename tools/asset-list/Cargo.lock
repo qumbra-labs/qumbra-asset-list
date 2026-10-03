@@ -467,7 +467,7 @@ dependencies = [
 [[package]]
 name = "qlab-air"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "p3-air",
  "p3-field",
@@ -477,7 +477,7 @@ dependencies = [
 [[package]]
 name = "qlab-cbserver"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "qlab-air",
  "qlab-devnet",
@@ -490,7 +490,7 @@ dependencies = [
 [[package]]
 name = "qlab-devnet"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "ml-dsa",
  "qlab-air",
@@ -502,17 +502,17 @@ dependencies = [
 [[package]]
 name = "qlab-econ"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 
 [[package]]
 name = "qlab-http-framing"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 
 [[package]]
 name = "qlab-ledger"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "qlab-air",
  "qlab-cbserver",
@@ -523,7 +523,7 @@ dependencies = [
 [[package]]
 name = "qlab-node"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "bincode",
  "ml-dsa",
@@ -539,7 +539,7 @@ dependencies = [
 [[package]]
 name = "qlab-note"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "chacha20poly1305",
  "ml-kem",
@@ -550,7 +550,7 @@ dependencies = [
 [[package]]
 name = "qlab-p2p"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "ml-dsa",
  "qlab-air",
@@ -563,12 +563,12 @@ dependencies = [
 [[package]]
 name = "qlab-pow"
 version = "0.1.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 
 [[package]]
 name = "qlab-wallet"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "ml-kem",
  "qlab-air",
@@ -585,7 +585,7 @@ checksum = "d68782463e408eb1e668cf6152704bd856c78c5b6417adaee3203d8f4c1fc9ec"
 [[package]]
 name = "qumbra-wallet"
 version = "0.0.0"
-source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=8b0529cc#8b0529cca85e42afdc4e8c4b7708221075a6bc1e"
+source = "git+https://github.com/qumbra-labs/qumbra-lab?rev=96e9314d#96e9314d7062f41cd5497ccca65c636b6f0dc96c"
 dependencies = [
  "bincode",
  "getrandom 0.4.3",

@@ -9,7 +9,7 @@ description = "Keygen, sign and verify for the Qumbra asset list (ML-DSA-65)."
 # The verifier is the wallet's own (one parser, one domain string): the list
 # this tool signs is accepted by exactly the code every wallet runs.
 # Pinned to the lab rev carrying AD2 (lab #850); repin when it merges.
-qumbra-wallet = { git = "https://github.com/qumbra-labs/qumbra-lab", rev = "8b0529cc", default-features = false, features = ["verify"] }
+qumbra-wallet = { git = "https://github.com/qumbra-labs/qumbra-lab", rev = "96e9314d", default-features = false, features = ["verify"] }
 # The exact ml-dsa rev the lab pins.
 ml-dsa = "=0.1.1"
 getrandom = "0.3"
