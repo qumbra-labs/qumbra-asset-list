@@ -1,0 +1,31 @@
+{
+  "v": 1,
+  "network": "annulet-gateway-testnet",
+  "genesis": "fcf7d570c3c0fa984664541fc437f0ef4b278639cf2770c412c8f8a6618bb438",
+  "assets": [
+    {
+      "id": 1,
+      "issuer_key": "b1a8e333e44eba296a329f67baba625d3c04a2ee2082cdf6296ef43c3dd5a1bc",
+      "name": "Test USDT (gateway testnet, Sepolia-backed)",
+      "ticker": "tUSDT",
+      "decimals": 6,
+      "testnet": true
+    },
+    {
+      "id": 1000,
+      "issuer_key": "068cba5ee784fe90b76e9e4f18bf5884931bdf21edb683943c10b1808851623d",
+      "name": "Sandbox test USD (hybrid)",
+      "ticker": "TUSD",
+      "decimals": 6,
+      "testnet": true
+    },
+    {
+      "id": 1001,
+      "issuer_key": "779045926b49b2264fbf8b2507590977142f89cead766cf3b6cc5a11ffc36526",
+      "name": "Sandbox test USD (cloaked)",
+      "ticker": "TCLOAKED",
+      "decimals": 6,
+      "testnet": true
+    }
+  ]
+}

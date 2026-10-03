@@ -1,0 +1,4 @@
+target/
+# A list-signing seed never enters this repository, under any name.
+*.seed
+*seed*.txt

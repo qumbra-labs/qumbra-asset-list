@@ -1,0 +1,23 @@
+# Every list in lists/ must verify under the list key in keys/, with the
+# wallet's own parser (the tool depends on qumbra-wallet's verify_asset_list).
+# A list without its .sig fails: an unsigned list is not a list.
+name: verify
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: build the tool
+        run: cargo build --release --manifest-path tools/asset-list/Cargo.toml
+      - name: verify every list
+        run: |
+          set -euo pipefail
+          test -f keys/list-key.pub || { echo "no keys/list-key.pub yet"; exit 1; }
+          for l in lists/*.json; do
+            tools/asset-list/target/release/asset-list verify --pub keys/list-key.pub --list "$l"
+          done
