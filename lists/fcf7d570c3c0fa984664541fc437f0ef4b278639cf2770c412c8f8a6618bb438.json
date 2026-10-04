@@ -12,6 +12,13 @@
       "decimals": 6
     },
     {
+      "id": 2,
+      "issuer_key": "436e5ba3d750fb2294223a812c04308b7a136a9ecc2bba9af532693d097a36fa",
+      "name": "Test QUSD (gateway testnet, Sepolia USDC-backed)",
+      "ticker": "tQUSD",
+      "decimals": 6
+    },
+    {
       "id": 1000,
       "issuer_key": "068cba5ee784fe90b76e9e4f18bf5884931bdf21edb683943c10b1808851623d",
       "name": "Sandbox test USD (hybrid)",

@@ -46,4 +46,4 @@ Qumbra 钱包按名字显示的 Annulet 资产，都登记在这份签名清单�
 
 | 网络 | 创世哈希 | 资产 |
 |---|---|---|
-| annulet-gateway-testnet | `fcf7d570…b438` | 1 tUSDT、1000 TUSD、1001 TCLOAKED（全部为测试币） |
+| annulet-gateway-testnet | `fcf7d570…b438` | 1 tUSDT、2 tQUSD、1000 TUSD、1001 TCLOAKED（全部为测试币） |
