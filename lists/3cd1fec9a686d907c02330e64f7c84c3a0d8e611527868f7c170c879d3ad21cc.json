@@ -1,0 +1,22 @@
+{
+  "v": 1,
+  "network": "annulet-testnet-2",
+  "genesis": "3cd1fec9a686d907c02330e64f7c84c3a0d8e611527868f7c170c879d3ad21cc",
+  "testnet": true,
+  "assets": [
+    {
+      "id": 1,
+      "issuer_key": "b1a8e333e44eba296a329f67baba625d3c04a2ee2082cdf6296ef43c3dd5a1bc",
+      "name": "Test USDT (gateway testnet, Sepolia-backed)",
+      "ticker": "tUSDT",
+      "decimals": 6
+    },
+    {
+      "id": 2,
+      "issuer_key": "436e5ba3d750fb2294223a812c04308b7a136a9ecc2bba9af532693d097a36fa",
+      "name": "Test QUSD (gateway testnet, Sepolia USDC-backed)",
+      "ticker": "tQUSD",
+      "decimals": 6
+    }
+  ]
+}
