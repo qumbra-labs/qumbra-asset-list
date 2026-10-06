@@ -68,3 +68,4 @@ $T verify --pub keys/list-key.pub --list lists/<genesis>.json
 | Network | Genesis | Assets |
 |---|---|---|
 | annulet-gateway-testnet | `fcf7d570…b438` | 1 tUSDT, 2 tQUSD, 1000 TUSD, 1001 TCLOAKED (all test money) |
+| annulet-testnet-2 (format 33, Candidate A) | `3cd1fec9…21cc` | 1 tUSDT, 2 tQUSD (all test money) |
